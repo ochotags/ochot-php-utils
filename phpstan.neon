@@ -1,0 +1,7 @@
+parameters:
+  level: 6
+  paths:
+    - src
+  bootstrapFiles:
+    - autoload.php
+    - src/webhooks/autoload.php
