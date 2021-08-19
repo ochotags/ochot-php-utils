@@ -1,0 +1,10 @@
+# comer
+vendor
+.idea
+logs/*
+error_log
+./.php-cs-fixer.cache
+./.phpunit.result.cache
+phpunit.xml
+.phpunit.cache
+tests/coverage
