@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace app\shared\valueObjects;
+namespace OchoPhpUtils\valueObjects;
 
 class CurlResponse
 {

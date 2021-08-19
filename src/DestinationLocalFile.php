@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace app\shared;
+namespace OchoPhpUtils;
 
-use app\shared\interfaces\DestinationInterface;
+use OchoPhpUtils\interfaces\DestinationInterface;
 
 class DestinationLocalFile implements DestinationInterface
 {
@@ -33,8 +33,7 @@ class DestinationLocalFile implements DestinationInterface
             return;
         }
         // Down two levels until root folder:
-        $folder = dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' .
-            DIRECTORY_SEPARATOR . $this->folder;
+        $folder = $this->folder;
         if (substr($folder, -1) != '/' && substr($folder, -1) != '\\') {
             $folder .= DIRECTORY_SEPARATOR;
         } else {

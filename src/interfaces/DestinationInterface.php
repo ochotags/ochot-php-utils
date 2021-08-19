@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace app\shared\interfaces;
+namespace OchoPhpUtils\interfaces;
 
 interface DestinationInterface
 {

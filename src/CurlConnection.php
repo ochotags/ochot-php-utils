@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace app\shared;
+namespace OchoPhpUtils;
 
-use app\shared\valueObjects\CurlOptions;
-use app\shared\valueObjects\CurlResponse;
+use OchoPhpUtils\valueObjects\CurlOptions;
+use OchoPhpUtils\valueObjects\CurlResponse;
 
 class CurlConnection
 {

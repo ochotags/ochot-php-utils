@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace app\shared;
+namespace OchoPhpUtils;
 
-use app\shared\interfaces\DestinationInterface;
-use app\shared\interfaces\LogsInterface;
+use OchoPhpUtils\interfaces\DestinationInterface;
+use OchoPhpUtils\interfaces\LogsInterface;
 
 class Logs implements LogsInterface
 {
