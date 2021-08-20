@@ -19,12 +19,12 @@ class LogsTest extends TestCase
     /** @var Array<string> */
     private $message;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
+//    protected function setUp(): void
+//    {
+//        parent::setUp();
+//    }
 
-    private function generateRandomString($length = 10)
+    private function generateRandomString($length = 10): string
     {
         $characters       = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);

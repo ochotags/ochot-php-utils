@@ -6,4 +6,5 @@ error_log
 ./.php-cs-fixer.cache
 ./.phpunit.result.cache
 .phpunit.cache
+.php-cs-fixer.cache
 tests/coverage
