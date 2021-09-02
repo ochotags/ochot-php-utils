@@ -185,8 +185,8 @@ class CurlConnectionTest extends TestCase
 
         $response          = $object->call($url);
         $this->response    = '"peliculas"';
-        $tomorrow          = strtotime('+0 day');
-        $this->headerValue = date('d', $tomorrow) . '/08","peliculas":[{"idgrupo":12418,"titulo":"SUPER';
+        $tomorrow          = strtotime('+1 day');
+        $this->headerValue = date('d', $tomorrow) . '/09","peliculas":[{"idgrupo":12410,"titulo":"After.';
         $this->commonAsserts($response);
 
         /* KO TEST */

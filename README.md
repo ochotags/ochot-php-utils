@@ -1,40 +1,70 @@
-OAuth
+# OchoT PHP Utils
 
-https://developer.atlassian.com/server/jira/platform/oauth/
+These are the internal libraries for PHP projects.
 
-PHPSALM
+## Libraries
 
-Normal:
+### Logs
 
-```
-./vendor/bin/psalm
-```
+The library for generating logs.
 
-A fondo:
+### Curl
 
-```
-./vendor/bin/psalm --show-info=true
-```
+A helper library to use a Curl Connection. You can customize the curl options. You get a complete response with the headers and the body. 
 
-PHP STAN
+## Installation via Composer
+
+First step, you must include the repository in the composer.json file:
 
 ```
-./vendor/bin/phpstan
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ochotags/ochot-php-utils.git"
+    }
+  ],
 ```
 
-PHP UNIT
+Then you must add the package in the "Require" section or "Require-dev":
 
 ```
-./vendor/bin/phpunit
+  "require": {
+    ...
+    "ochotags/ochot-php-utils": "1.0.0",
+    ...
+  },
 ```
 
+Finally, you must execute the composer update command:
+
 ```
-./vendor/bin/phpunit --coverage-html ./tests/coverage/html
+$ composer update
 ```
 
-TODO
+## Validation and tests
 
-Los tests.
+### Phpsalm
 
-Añadir una variable de entorno que nos permita activar o desactivar los logs del sistema.
+```
+// Normal run
+$ ./vendor/bin/psalm
 
+// Verbose run
+$ ./vendor/bin/psalm --show-info=true
+```
+
+### Phpstan
+
+```
+$ ./vendor/bin/phpstan
+```
+
+### Phpunit
+
+```
+// Normal run
+$ ./vendor/bin/phpunit
+
+// With coverage report
+$ ./vendor/bin/phpunit --coverage-html ./tests/coverage/html
+```
